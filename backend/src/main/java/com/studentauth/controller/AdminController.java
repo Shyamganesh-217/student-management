@@ -28,7 +28,8 @@ public class AdminController {
     }
 
     /**
-     * Retrieves the list of all registered students, optionally filtered by search query.
+     * Retrieves the list of all registered students, optionally filtered by search
+     * query.
      * Accessible only by administrators.
      */
     @GetMapping("/students")
@@ -47,4 +48,10 @@ public class AdminController {
         AdminStatsResponse stats = adminService.getStats();
         return ResponseEntity.ok(stats);
     }
+
+    @GetMapping("/demo")
+    public String demo() {
+        return "demo";
+    }
+
 }
