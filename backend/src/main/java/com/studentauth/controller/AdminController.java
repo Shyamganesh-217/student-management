@@ -49,9 +49,4 @@ public class AdminController {
         return ResponseEntity.ok(stats);
     }
 
-    @GetMapping("/demo")
-    public String demo() {
-        return "demo";
-    }
-
 }
